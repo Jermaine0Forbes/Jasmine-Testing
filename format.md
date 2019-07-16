@@ -5,7 +5,7 @@
 View Content
 </summary>
 
-:link: **reference**
+:link: **Reference**
 - []()
 
 ```js
@@ -18,7 +18,7 @@ View Content
 
 :exclamation: **Note:**
 
-:question: **syntax**
+:question: **Syntax**
 
 :blue_book: **Summary:**
 

@@ -20,13 +20,14 @@
 View Content
 </summary>
 
-:link: **reference**
+:link: **Reference**
 - [Your first suite](https://jasmine.github.io/tutorials/your_first_suite.html)
 ---
 
-:question: **syntax**
+:question: **Syntax**
 
 `describe(description, specDefinitions)`
+
 ---
 
 :blue_book: **Summary:** The describe function is for grouping related specs, typically each test file has one at the top level. The string parameter is for naming the collection of specs, and will be concatenated with specs to make a spec's full name.
