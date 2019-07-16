@@ -5,7 +5,7 @@
 View Content
 </summary>
 
-:link:**reference**:link:
+:link: **reference**
 - []()
 
 ```js
@@ -15,3 +15,7 @@ View Content
 </details>
 
 [go back :house:][home]
+
+:exclamation: **Note:**
+
+### :star: Example

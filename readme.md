@@ -1,10 +1,33 @@
 # Jasmine
 
-
 - [how to install jasmine][inst-jasmine]
 
+## Expectations
+- [toBe][tobe]
+
+[tobe]:#toBe
 [home]:#jasmine
 [inst-jasmine]:#how-to-install-jasmine
+
+
+### toBe
+
+<details>
+<summary>
+View Content
+</summary>
+
+:link: **reference**
+- [matchers](https://jasmine.github.io/api/edge/matchers.html)
+
+```js
+
+```
+
+</details>
+
+[go back :house:][home]
+
 
 
 ### how to install jasmine
@@ -14,7 +37,7 @@
 View Content
 </summary>
 
-:link:**reference**:link:
+:link:**reference**
 - [jasmine](https://jasmine.github.io/setup/nodejs.html)
 
 1. In your terminal, install jasmine with these commands. Make sure you have npm
