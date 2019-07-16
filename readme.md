@@ -1,13 +1,56 @@
 # Jasmine
 
 - [how to install jasmine][inst-jasmine]
+- [what does the describe function do][describe]
 
 ## Expectations
 - [toBe][tobe]
 
+[describe]:#what-does-the-describe-function-do
 [tobe]:#toBe
 [home]:#jasmine
 [inst-jasmine]:#how-to-install-jasmine
+
+
+
+### what does the describe function do
+
+<details>
+<summary>
+View Content
+</summary>
+
+:link: **reference**
+- [Your first suite](https://jasmine.github.io/tutorials/your_first_suite.html)
+---
+
+:question: **syntax**
+
+`describe(description, specDefinitions)`
+---
+
+:blue_book: **Summary:** The describe function is for grouping related specs, typically each test file has one at the top level. The string parameter is for naming the collection of specs, and will be concatenated with specs to make a spec's full name.
+
+```js
+
+// The describe function holds a group of related specs to be ran, and describes what is about
+describe("Cat", function(){
+  const Cat = require("../../lib/jasmine_examples/Cat");// assigns the cat class to Cat
+  let cat;
+
+  beforeEach(function(){ // before a spec runs, Cat is instantiated into cat
+    cat = new Cat();
+
+  })
+
+  // this spec, runs an assertion of the isCat property to return true
+  it("is actually a cat", function(){
+        expect(cat.isCat).toBe(true);
+  });
+});
+```
+
+</details>
 
 
 ### toBe
@@ -20,8 +63,29 @@ View Content
 :link: **reference**
 - [matchers](https://jasmine.github.io/api/edge/matchers.html)
 
-```js
+:question: **syntax**
 
+`expect(thing).toBe(realThing);`
+
+**In js file**
+```js
+class Cat{
+
+  constructor(){
+    this.isCat = true;//this is the property we are going to test
+   console.log("cat is created");
+  }
+}
+
+module.exports = Cat;
+```
+
+
+**In spec file**
+```js
+it("is actually a cat", function(){
+      expect(cat.isCat).toBe(true); //
+});
 ```
 
 </details>

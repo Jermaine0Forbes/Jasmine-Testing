@@ -18,4 +18,8 @@ View Content
 
 :exclamation: **Note:**
 
+:question: **syntax**
+
+:blue_book: **Summary:**
+
 ### :star: Example
