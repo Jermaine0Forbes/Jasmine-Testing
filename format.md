@@ -7,6 +7,13 @@ View Content
 
 :link: **Reference**
 - []()
+---
+:question: **Syntax**
+
+``
+
+---
+:blue_book: **Summary:**
 
 ```js
 

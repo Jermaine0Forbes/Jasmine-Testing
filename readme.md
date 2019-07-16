@@ -2,15 +2,49 @@
 
 - [how to install jasmine][inst-jasmine]
 - [what does the describe function do][describe]
+- [what does the "it" function do][it]
 
 ## Expectations
 - [toBe][tobe]
 
+[it]:#what-does-the-it-function-do
 [describe]:#what-does-the-describe-function-do
 [tobe]:#toBe
 [home]:#jasmine
 [inst-jasmine]:#how-to-install-jasmine
 
+
+### what does the it function do
+
+<details>
+<summary>
+View Content
+</summary>
+
+:link: **Reference**
+- [jasmine global](https://jasmine.github.io/api/edge/global.html#it)
+---
+:question: **Syntax**
+
+`it(description, testFunctionopt, timeoutopt)`
+
+---
+:blue_book: **Summary:** Define a single spec. A spec should contain one or more
+ expectations that test the state of the code. A spec whose expectations all succeed
+will be passing and a spec with any failures will fail.
+
+```js
+// The it functions purpose it to hold one or more expections
+it("is actually a cat", function(){
+      expect(cat.isCat).toBe(true);// checks if isCat returns true
+
+      expect(cat.weight).toEqual("2kg"); // checks if weight is equivalent to 2kg
+});
+```
+
+</details>
+
+[go back :house:][home]
 
 
 ### what does the describe function do
@@ -34,7 +68,7 @@ View Content
 
 ```js
 
-// The describe function holds a group of related specs to be ran, and describes what is about
+// The describe function holds a group of related specs to be ran, and describes what it is about
 describe("Cat", function(){
   const Cat = require("../../lib/jasmine_examples/Cat");// assigns the cat class to Cat
   let cat;
@@ -44,7 +78,7 @@ describe("Cat", function(){
 
   })
 
-  // this spec, runs an assertion of the isCat property to return true
+  // this spec, runs an assertion that the isCat property  is to return true
   it("is actually a cat", function(){
         expect(cat.isCat).toBe(true);
   });
